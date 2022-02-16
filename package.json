@@ -6,19 +6,21 @@
   "scripts": {
     "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn ./src/index.ts",
     "start": "node dist/index.js",
-    "build": "tsc",
-    "postinstall": "npm run build"
+    "build": "tsc"
   },
   "dependencies": {
     "axios": "^0.26.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
-    "knex": "^1.0.3"
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.41"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
+    "@types/node": "^17.0.18",
     "nodemon": "^2.0.15",
     "ts-node": "^10.5.0",
     "ts-node-dev": "^1.1.8",
