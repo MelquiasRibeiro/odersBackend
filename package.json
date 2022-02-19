@@ -6,16 +6,19 @@
   "scripts": {
     "dev": "tsnd --transpile-only --ignore-watch node_modules --respawn ./src/index.ts",
     "start": "node dist/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "typeorm": "node --loader ts-node/esm ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
+    "@types/uuid": "^8.3.4",
     "axios": "^0.26.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.2",
-    "typeorm": "^0.2.41"
+    "typeorm": "^0.2.41",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
